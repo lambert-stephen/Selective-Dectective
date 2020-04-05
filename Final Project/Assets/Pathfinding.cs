@@ -6,12 +6,14 @@ public class Pathfinding : MonoBehaviour
 {
   public Transform[] points;
   private NavMeshAgent nav;
-  private int destPoint;
+  private int destPoint=0;
+  
   void Start(){
       nav = GetComponent<NavMeshAgent>();
   }
-  void FixedUpdate(){
-      if (!nav.pathPending && nav.remainingDistance < 0.5f){
+  void Update(){
+      if (!nav.pathPending && nav.remainingDistance < 0.5f)
+      {
           GoToNextPoint();
       }
   }
@@ -21,7 +23,10 @@ public class Pathfinding : MonoBehaviour
   	{
   		return;
   	}
+
+    destPoint=Random.Range(0,17);
+    Debug.Log("Destination: "+destPoint);
   	nav.destination = points[destPoint].position;
-  	destPoint = (destPoint + 1) % points.Length;
+  	
   }
 }
