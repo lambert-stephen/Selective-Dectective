@@ -21,6 +21,12 @@ public class Pathfinding : MonoBehaviour
   	{
   		return;
   	}
+<<<<<<< HEAD
+    Random.seed = System.DateTime.Now.Millisecond;
+    destPoint=Random.Range(0,17);
+    Debug.Log("Destination: "+destPoint);
+=======
+>>>>>>> 60834b67116fecb2f25f9fa5d424e80796edbee2
   	nav.destination = points[destPoint].position;
   	destPoint = (destPoint + 1) % points.Length;
   }
