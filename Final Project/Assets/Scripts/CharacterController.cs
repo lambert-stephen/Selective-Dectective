@@ -35,13 +35,4 @@ public class CharacterController : MonoBehaviour
         else if (Input.GetKey(KeyCode.F))
             t.rotation *= Quaternion.Euler(0, -rotationSpeed * Time.deltaTime, 0);
     }
-
-    void OnCollisionEnter(Collision theCollision)
-    {
-        if(theCollision.gameObject.tag == "Steal_This")
-        {
-            DestroyObject(theCollision.gameObject);
-        }
-        
-    }
 }
