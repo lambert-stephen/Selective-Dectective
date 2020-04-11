@@ -1,0 +1,4 @@
+Schedule and Deliverables:
+Pathfinding - Tuesday, March 31 after 5pm (estimated: 8 hrs)
+Get protytpe working in Cave simulator- Sunday March 29 12 PM (estimated 6 hours)
+Level Design- Sunday March 29 12 PM (3 hours)
