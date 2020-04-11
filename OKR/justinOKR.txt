@@ -1,0 +1,6 @@
+Cave - Sunday, March 29 after 12pm (estimated: 3 hrs)
+Level Design - Sunday, March 29 12pm (estimated: 2 hrs)
+
+Pathfinding - Tuesday, March 31 after 5pm (estimated: 8 hrs)
+Generate Random Characters - Tuesday, March 31 after 5pm (estimated: 3 hrs)
+Decide on Characters - Tuesday, March 31 after 5pm (estimated: 2 hrs)
