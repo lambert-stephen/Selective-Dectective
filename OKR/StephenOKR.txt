@@ -1,0 +1,3 @@
+Level Design - Sun March 29th (estimated: 2 hrs)
+Cave - Sun March 29th (estimated: 6)
+Pathfinding - Tuesday April 1st (estimated 8 hrs)
