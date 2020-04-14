@@ -176,7 +176,7 @@ public class CAVE2RPCManager : MonoBehaviour {
     {
         GlobalConfig gConfig = new GlobalConfig();
         //gConfig.MaxPacketSize = 500;
-
+        NetworkServer.Reset();
         NetworkTransport.Init(gConfig);
 
         ConnectionConfig config = new ConnectionConfig();

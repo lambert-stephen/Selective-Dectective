@@ -7,28 +7,32 @@ public class Pathfinding : MonoBehaviour
   public Transform[] points;
   private NavMeshAgent nav;
   private int destPoint;
-  float dist,dist2,seconds;
+  float dist,dist2;
+  float countSeconds = 0;
+  float randTimeToChangePath;
   void Start(){
       nav = GetComponent<NavMeshAgent>();
+      randTimeToChangePath = Random.Range(5,15);
   }
   void FixedUpdate()
   {
-     dist=nav.remainingDistance;
-    seconds += Time.deltaTime;
-    
-      if (!nav.pathPending && nav.remainingDistance < 0.5f){
+    dist=nav.remainingDistance;
+    countSeconds += Time.deltaTime;
+    //Debug.Log(countSeconds + " Count"); //Print to dev log seconds
+      if (!nav.pathPending && nav.remainingDistance < 1.0f){
           GoToNextPoint();
       }
-     if(seconds>2) 
+     if(countSeconds>randTimeToChangePath) //After x rand seconds, NPC changes their mind.
       {
         dist2=dist-nav.remainingDistance;
         if(dist2 <1 && dist2>=0 )
         {
           Random.seed = System.DateTime.Now.Millisecond;
-    destPoint=Random.Range(0,17);
-  	nav.destination = points[destPoint].position;
+          destPoint=Random.Range(0,17);
+  	      nav.destination = points[destPoint].position;
         }
-
+        countSeconds = 0;
+        randTimeToChangePath = Random.Range(5,15);
       }
   }
   void GoToNextPoint()
@@ -41,4 +45,5 @@ public class Pathfinding : MonoBehaviour
     destPoint=Random.Range(0,17);
   	nav.destination = points[destPoint].position;
   }
+
 }
