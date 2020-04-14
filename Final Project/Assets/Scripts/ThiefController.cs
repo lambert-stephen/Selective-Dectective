@@ -23,9 +23,9 @@ public class ThiefController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey("[5]") && (rb.velocity.magnitude < maxFwdSpeed))
+        if (Input.GetKey("[5]") )//&& (rb.velocity.magnitude < maxFwdSpeed))
             rb.velocity += this.transform.forward * speed * Time.deltaTime;
-        else if (Input.GetKey("[2]") && (rb.velocity.magnitude < maxBckSpeed))
+        else if (Input.GetKey("[2]") )// && (rb.velocity.magnitude < maxBckSpeed))
         {
             rb.velocity -= this.transform.forward * speed * Time.deltaTime;
         }
