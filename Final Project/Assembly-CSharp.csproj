@@ -166,7 +166,7 @@
      <Compile Include="Assets\module-omicron-master\Tests\Touch\SimpleCanvasTouch.cs" />
      <Compile Include="Assets\Pathfinding.cs" />
      <Compile Include="Assets\Remove.cs" />
-     <Compile Include="Assets\Scripts\CharacterController.cs" />
+     <Compile Include="Assets\Scripts\ThiefController.cs" />
      <Compile Include="Assets\Sound.cs" />
      <Compile Include="Assets\Spawn.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
@@ -202,6 +202,7 @@
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeB.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
+     <Compile Include="Assets\ThiefSpawn.cs" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
      <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
      <None Include="Assets\Textures\_CustomShaders\FsSoftGrass.shader" />

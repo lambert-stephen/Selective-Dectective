@@ -2,13 +2,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-public class CharacterController : MonoBehaviour
+public class ThiefController : MonoBehaviour
 {
-    public float speed = 25.0f;
+    public float speed = 2f;
     public float rotationSpeed = 90;
 	
-	private float maxFwdSpeed = 10f;
-    private float maxBckSpeed = 5f;
+	private float maxFwdSpeed = 2f;
+    private float maxBckSpeed = 1f;
 
     Rigidbody rb;
     Transform t;
@@ -16,9 +16,8 @@ public class CharacterController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        FindObjectOfType<AudioManager>().Play("Talking");
-        rb = GetComponent<Rigidbody>();
-        t = GetComponent<Transform>();
+        rb = this.GetComponent<Rigidbody>();
+        t = this.GetComponent<Transform>();
     }
 
     // Update is called once per frame
