@@ -8,19 +8,21 @@ public class Spawn : MonoBehaviour
     public GameObject[] prefabs;
     public Transform[] points; 
     int[] index = new int[5];
-    public Button c1;
-    public Button c2;
-    public Button c3;
-    public Button c4;
+    public Button[] buttons;
+    int selected=0;
     
     int r;
     // This script will simply instantiate the Prefab when the game starts.
     void Start()
     {
-        c1.onClick.AddListener(char1);
-        c2.onClick.AddListener(char2);
-        c3.onClick.AddListener(char3);
-        c4.onClick.AddListener(char4);
+        var colors1 = buttons[0].colors;
+        var colors2 = buttons[0].colors;
+        colors2.normalColor = Color.green;
+        buttons[0].colors= colors2; 
+        buttons[0].onClick.AddListener(char1);
+        buttons[1].onClick.AddListener(char2);
+        buttons[2].onClick.AddListener(char3);
+        buttons[3].onClick.AddListener(char4);
         Random.seed = System.DateTime.Now.Millisecond;
         index[0]=Random.Range(0,19);
         while (true)
@@ -57,8 +59,58 @@ public class Spawn : MonoBehaviour
         
     }
 
-    public void char1()
 
+    void Update() 
+     {
+      
+      var colors1 = buttons[1].colors;
+      var colors2 = buttons[1].colors;
+      colors2.normalColor = Color.green;
+      
+      if(selected==1) 
+      { 
+        colors1 = buttons[0].colors;
+      }
+
+         
+         if (Input.GetKeyDown(KeyCode.Alpha1))
+         {
+            buttons[selected].colors=colors1;
+             if(selected==0)
+                {
+
+                    selected=3;
+                }
+            else
+                {
+                    selected--;
+                }
+            buttons[selected].colors=colors2;
+
+         }
+
+          if (Input.GetKeyDown(KeyCode.Alpha2))
+         {
+           buttons[selected].colors=colors1;
+             if(selected==3)
+                {
+                    selected=0;
+                }
+            else
+                {
+                    selected++;
+                }
+            buttons[selected].colors=colors2;  
+         }
+           if (Input.GetKeyDown(KeyCode.Alpha3))
+         {
+            buttons[selected].onClick.Invoke();
+         }
+           
+ 
+     }
+
+    public void char1()
     {
    PlayerPrefs.SetInt("index", index[0]);
    Debug.Log("Selected index: "+index[0]);
