@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Steal_This
   - music
+  - ignoreNPC
+  - NPC
   layers:
   - Default
   - TransparentFX

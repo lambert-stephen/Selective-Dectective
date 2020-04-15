@@ -169,6 +169,7 @@
      <Compile Include="Assets\Pathfinding.cs" />
      <Compile Include="Assets\Remove.cs" />
      <Compile Include="Assets\Reveal.cs" />
+     <Compile Include="Assets\RevealTimer.cs" />
      <Compile Include="Assets\Scripts\ThiefController.cs" />
      <Compile Include="Assets\Sound.cs" />
      <Compile Include="Assets\Spawn.cs" />

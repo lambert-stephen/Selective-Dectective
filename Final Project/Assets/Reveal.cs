@@ -58,11 +58,50 @@ public class Reveal : MonoBehaviour
             }
         }
         index[n]=playerindex;
-        Instantiate(prefabs[index[0]], points[0].position, Quaternion.Euler(new Vector3(0, 180, 0)));
-        Instantiate(prefabs[index[1]], points[1].position, Quaternion.Euler(new Vector3(0, 180, 0)));
-        Instantiate(prefabs[index[2]], points[2].position, Quaternion.Euler(new Vector3(0, 180, 0)));
-        Instantiate(prefabs[index[3]], points[3].position, Quaternion.Euler(new Vector3(0, 180, 0)));
         
+        if(n==0)
+        {
+        Instantiate(prefabs[index[0]], points[0].position, Quaternion.Euler(new Vector3(0, 180, 0)));
+        GameObject clone=Instantiate(prefabs[index[1]], points[1].position, Quaternion.Euler(new Vector3(0, 180, 0))) as GameObject; 
+        clone.gameObject.tag = "NPC";
+        GameObject clone2=Instantiate(prefabs[index[2]], points[2].position, Quaternion.Euler(new Vector3(0, 180, 0))) as GameObject;
+        clone2.gameObject.tag = "NPC";
+        GameObject clone3=Instantiate(prefabs[index[3]], points[3].position, Quaternion.Euler(new Vector3(0, 180, 0))) as GameObject;
+        clone3.gameObject.tag = "NPC";
+        }
+
+        if(n==1)
+        {
+        GameObject clone=Instantiate(prefabs[index[0]], points[0].position, Quaternion.Euler(new Vector3(0, 180, 0))) as GameObject;
+        clone.gameObject.tag = "NPC";
+        Instantiate(prefabs[index[1]], points[1].position, Quaternion.Euler(new Vector3(0, 180, 0)));
+        GameObject clone2=Instantiate(prefabs[index[2]], points[2].position, Quaternion.Euler(new Vector3(0, 180, 0))) as GameObject;
+        clone2.gameObject.tag = "NPC";
+        GameObject clone3=Instantiate(prefabs[index[3]], points[3].position, Quaternion.Euler(new Vector3(0, 180, 0))) as GameObject;
+        clone3.gameObject.tag = "NPC";
+        }
+
+        if(n==2)
+        {
+        GameObject clone=Instantiate(prefabs[index[0]], points[0].position, Quaternion.Euler(new Vector3(0, 180, 0))) as GameObject;
+        clone.gameObject.tag = "NPC";
+        GameObject clone2=Instantiate(prefabs[index[1]], points[1].position, Quaternion.Euler(new Vector3(0, 180, 0))) as GameObject;
+        clone2.gameObject.tag = "NPC";
+        Instantiate(prefabs[index[2]], points[2].position, Quaternion.Euler(new Vector3(0, 180, 0)));
+        GameObject clone3=Instantiate(prefabs[index[3]], points[3].position, Quaternion.Euler(new Vector3(0, 180, 0))) as GameObject;
+        clone3.gameObject.tag = "NPC";
+        }
+        if(n==3)
+        {
+        GameObject clone=Instantiate(prefabs[index[0]], points[0].position, Quaternion.Euler(new Vector3(0, 180, 0))) as GameObject;
+        clone.gameObject.tag = "NPC";
+        GameObject clone2=Instantiate(prefabs[index[1]], points[1].position, Quaternion.Euler(new Vector3(0, 180, 0))) as GameObject;
+        clone2.gameObject.tag = "NPC";
+        GameObject clone3=Instantiate(prefabs[index[2]], points[2].position, Quaternion.Euler(new Vector3(0, 180, 0))) as GameObject;
+        clone3.gameObject.tag = "NPC";
+
+        Instantiate(prefabs[index[3]], points[3].position, Quaternion.Euler(new Vector3(0, 180, 0)));
+        }
     }
 
 
