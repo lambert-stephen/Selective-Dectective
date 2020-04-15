@@ -5,13 +5,19 @@ using UnityEngine;
 public class ThiefSpawn : MonoBehaviour
 {
      public GameObject[] prefabs;
-     int index;
+    public Transform[] points;
+    
+    int index,spawnPoint;
      Transform t;
 
     // Start is called before the first frame update
     void Start()
     {
-      t = this.GetComponent<Transform>();
+            t = this.GetComponent<Transform>();
+
+    Random.seed = System.DateTime.Now.Millisecond;
+      spawnPoint=Random.Range(0,4);
+      t.position=points[spawnPoint].position;
       index = PlayerPrefs.GetInt("index",0); 
       GameObject go = Instantiate(prefabs[index], t.position, Quaternion.identity) as GameObject; 
       go.transform.parent = t;
