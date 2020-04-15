@@ -2,13 +2,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 public class ThiefController : MonoBehaviour
 {
-    public float speed = 2f;
+    public float speed = 1.5f;
     public float rotationSpeed = 90;
 	
 	private float maxFwdSpeed = 2f;
     private float maxBckSpeed = 1f;
+
+    int selector = 0;
 
     Rigidbody rb;
     Transform t;
@@ -23,17 +27,22 @@ public class ThiefController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey("[5]") )//&& (rb.velocity.magnitude < maxFwdSpeed))
+        if (Input.GetKey(KeyCode.UpArrow) )//&& (rb.velocity.magnitude < maxFwdSpeed))
             rb.velocity += this.transform.forward * speed * Time.deltaTime;
-        else if (Input.GetKey("[2]") )// && (rb.velocity.magnitude < maxBckSpeed))
-        {
-            rb.velocity -= this.transform.forward * speed * Time.deltaTime;
-        }
+        //else if (Input.GetKey(KeyCode.DownArrow) )// && (rb.velocity.magnitude < maxBckSpeed))
+        //{
+        //    rb.velocity -= this.transform.forward * speed * Time.deltaTime;
+        //}
 
-        if (Input.GetKey("[3]"))
+        if (Input.GetKey(KeyCode.RightArrow))
             t.rotation *= Quaternion.Euler(0, rotationSpeed * Time.deltaTime, 0);
-        else if (Input.GetKey("[1]"))
+        else if (Input.GetKey(KeyCode.LeftArrow))
             t.rotation *= Quaternion.Euler(0, -rotationSpeed * Time.deltaTime, 0);
+
+        if (selector >= 4)
+        {
+            SceneManager.LoadScene("Reveal");
+        }
 
     }
 
@@ -43,6 +52,7 @@ public class ThiefController : MonoBehaviour
         if(theCollision.gameObject.tag == "Steal_This")
         {
             FindObjectOfType<AudioManager>().Play("Stolen");
+            selector += 1;
             DestroyObject(theCollision.gameObject);
         } 
     }

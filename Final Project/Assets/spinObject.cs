@@ -11,7 +11,7 @@ public class spinObject : MonoBehaviour
     void Start()
     {
         t = GetComponent<Transform>();
-        gameObject.GetComponent<Renderer>().material.color = new Color( 0.0f, 0.3f, 0.5f); // yellow
+        gameObject.GetComponent<Renderer>().material.color = new Color( 0.0f, 0.0f, Random.Range(.1f,.5f)); 
     }
 
     // Update is called once per frame

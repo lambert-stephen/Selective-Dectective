@@ -73,7 +73,7 @@ public class Spawn : MonoBehaviour
       }
 
          
-         if (Input.GetKeyDown(KeyCode.Alpha1))
+         if (Input.GetKeyDown(KeyCode.LeftArrow))
          {
             buttons[selected].colors=colors1;
              if(selected==0)
@@ -89,7 +89,7 @@ public class Spawn : MonoBehaviour
 
          }
 
-          if (Input.GetKeyDown(KeyCode.Alpha2))
+          if (Input.GetKeyDown(KeyCode.RightArrow))
          {
            buttons[selected].colors=colors1;
              if(selected==3)
@@ -102,7 +102,7 @@ public class Spawn : MonoBehaviour
                 }
             buttons[selected].colors=colors2;  
          }
-           if (Input.GetKeyDown(KeyCode.Alpha3))
+           if (Input.GetKeyDown(KeyCode.UpArrow))
          {
             buttons[selected].onClick.Invoke();
          }

@@ -29,7 +29,6 @@ public class Reveal : MonoBehaviour
             }
         }
         
-        index[0]=Random.Range(0,19);
         while (true)
         {
             r=Random.Range(0,19);
