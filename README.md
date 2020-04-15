@@ -31,7 +31,7 @@ Your demo must use 2 AI techniques
 
 Assignment 8 Updates
 
-- In our assignment 7 submission we found that are UI was saturated, that our learniability, consistency, and clarity principles were broken thoughout our game. We also found having colors that are less saturated, and sound that can keep the player engaged can make gameplayer better, so we updated our game by fixing the colors so that they are less saturated, by adding more buildings to make the game consistent,by adding tutorials so that game play can be clear, and by adding mores sounds  throughout our game. 
+- In our assignment 7 submission we found that our UI was saturated, that our learniability, consistency, and clarity principles were broken thoughout our game. We also found having colors that are less saturated, and sound that can keep the player engaged can make gameplayer better, so we updated our game by fixing the colors so that they are less saturated, by adding more buildings to make the game consistent,by adding tutorials so that game play can be clear, and by adding mores sounds  throughout our game. 
 
 
 
