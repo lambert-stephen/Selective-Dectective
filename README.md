@@ -29,5 +29,10 @@ Your demo must use 2 AI techniques
 
 *Note: Our graduate student was unable to successfully get his own pathfinding working. However, I still included his work (Folder titled: Graduate_Work) as he spent quite some time trying to figure it out. But ultimately for the sake of time he decided to stick with Unity’s pathfinding which might reduce his credit. My hope in bringing attention to this is so that he can possibly still get credit for the work he did. He was able to get his own nav-mesh and pathfinding working but simply unable to get character movement with unity crashing. Please consider this detail, as I personally believe my team-member deserves some credit even though it didn’t make the cut.
 
+Assignment 8 Updates
+
+- In our assignment 7 submission we found that are UI was saturated, that our learniability, consistency, and clarity principles were broken thoughout our game. We also found having colors that are less saturated, and sound that can keep the player engaged can make gameplayer better, so we updated our game by fixing the colors so that they are less saturated, by adding more buildings to make the game consistent,by adding tutorials so that game play can be clear, and by adding mores sounds  throughout our game. 
+
+
 
 
