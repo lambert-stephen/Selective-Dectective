@@ -15849,6 +15849,7 @@ GameObject:
   - component: {fileID: 64075396210287214}
   - component: {fileID: 114139500427107246}
   - component: {fileID: 65265741481609660}
+  - component: {fileID: 95368546734580050}
   m_Layer: 0
   m_Name: female_suite8_LOD
   m_TagString: Untagged
@@ -15994,3 +15995,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.5, y: 2, z: 0.5}
   m_Center: {x: 0, y: 1, z: 0}
+--- !u!95 &95368546734580050
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7084261174193269660}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: 0eb85a2fff59589458666a8c9caec230, type: 3}
+  m_Controller: {fileID: 9100000, guid: 2e080600a0c845542ab07a22c26388a5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

@@ -6,40 +6,48 @@ using UnityEngine.SceneManagement;
 
 public class ThiefController : MonoBehaviour
 {
-    public float speed = 1.5f;
+    public float speed = 1f;
     public float rotationSpeed = 90;
-	
-	private float maxFwdSpeed = 2f;
-    private float maxBckSpeed = 1f;
 
     int selector = 0;
-
+    int moving=0;
     Rigidbody rb;
     Transform t;
-
+    Animator animator;
     // Start is called before the first frame update
     void Start()
     {
         rb = this.GetComponent<Rigidbody>();
         t = this.GetComponent<Transform>();
+        animator = this.GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.UpArrow) )//&& (rb.velocity.magnitude < maxFwdSpeed))
-            rb.velocity += this.transform.forward * speed * Time.deltaTime;
-        //else if (Input.GetKey(KeyCode.DownArrow) )// && (rb.velocity.magnitude < maxBckSpeed))
-        //{
-        //    rb.velocity -= this.transform.forward * speed * Time.deltaTime;
-        //}
+
+        if (Input.GetKey(KeyCode.UpArrow))//  && (rb.velocity.magnitude < maxFwdSpeed))
+            {
+            rb.velocity = this.transform.forward * 80f * Time.deltaTime;
+            animator.enabled=true;
+            }
+           /* 
+        else if (Input.GetKey(KeyCode.DownArrow) )// && (rb.velocity.magnitude < maxBckSpeed))
+            {
+            rb.velocity -= this.transform.forward * speed * Time.deltaTime;
+            }
+            */
+        else 
+        {
+            animator.enabled=false;
+        }    
 
         if (Input.GetKey(KeyCode.RightArrow))
             t.rotation *= Quaternion.Euler(0, rotationSpeed * Time.deltaTime, 0);
         else if (Input.GetKey(KeyCode.LeftArrow))
             t.rotation *= Quaternion.Euler(0, -rotationSpeed * Time.deltaTime, 0);
 
-        if (selector >= 4)
+        if (selector >= 3)
         {
             SceneManager.LoadScene("Reveal");
         }

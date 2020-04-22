@@ -142,6 +142,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1885900120832346558}
   - component: {fileID: 1885900120832346557}
+  - component: {fileID: 3913400592147930039}
   m_Layer: 0
   m_Name: female_suite3_LOD
   m_TagString: Untagged
@@ -230,6 +231,25 @@ LODGroup:
     - renderer: {fileID: 8866515915999797452}
     - renderer: {fileID: 8516472142033799077}
   m_Enabled: 1
+--- !u!95 &3913400592147930039
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1885900120832346559}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3913660977153415650
 GameObject:
   m_ObjectHideFlags: 0

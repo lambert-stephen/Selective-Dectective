@@ -4104,6 +4104,7 @@ GameObject:
   - component: {fileID: 64555972541319746}
   - component: {fileID: 114517318164016002}
   - component: {fileID: 65328914198835854}
+  - component: {fileID: 95172401828179124}
   m_Layer: 0
   m_Name: female_suite1_LOD
   m_TagString: Untagged
@@ -4226,7 +4227,7 @@ MeshCollider:
   m_GameObject: {fileID: 3750431202108128901}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
@@ -4243,7 +4244,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78b6634976b15db4d9cf9bad929dc8b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 25
+  speed: 2
   rotationSpeed: 90
 --- !u!65 &65328914198835854
 BoxCollider:
@@ -4254,10 +4255,29 @@ BoxCollider:
   m_GameObject: {fileID: 3750431202108128901}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 0.5, y: 2, z: 0.5}
   m_Center: {x: 0, y: 1, z: 0}
+--- !u!95 &95172401828179124
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3750431202108128901}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: 0eb85a2fff59589458666a8c9caec230, type: 3}
+  m_Controller: {fileID: 9100000, guid: 2e080600a0c845542ab07a22c26388a5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 1
+  m_ApplyRootMotion: 1
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3990642986516524544
 GameObject:
   m_ObjectHideFlags: 0
