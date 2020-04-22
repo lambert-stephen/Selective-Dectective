@@ -33,6 +33,8 @@ Assignment 8 Updates
 
 - In our assignment 7 submission we found that our colors were saturated, that our learnability, consistency, and clarity principles were broken thoughout our game. We also found having colors that are less saturated, and sound that can keep the player engaged can make gameplayer better, so we updated our game by fixing the colors so that they are less saturated, by adding more buildings to make the game consistent,by adding tutorials so that game play can be clear, and by adding more sounds throughout our game. 
 
+Assignment 9 
 
+- In our assignment 9 submission we added 3 shaders [tree (simulate wind), Shiny Heart, Matted on Cars]. From the feedback we fixed NPCs glitched, smoother thief movement, Story, smoother tutorial, more things to steal, score display for thief's stolen goods, fixed glitched NPCs, Scaled NPCs down
 
 
