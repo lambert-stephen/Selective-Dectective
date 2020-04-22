@@ -7,7 +7,8 @@ using UnityEngine.SceneManagement;
 public class RevealTimer : MonoBehaviour
 {
     public GameObject textDisplay;
-    public int secondsLeft = 5;
+    public int secondsLeft = 20;
+    public int secondsLeftTillCredits = 5;
     public bool takingAway = false;
 
     // Start is called before the first frame update
@@ -27,12 +28,9 @@ public class RevealTimer : MonoBehaviour
         {
             textDisplay.GetComponent<TextMesh>().text = "The Thief Was" ;
             destroyNPC();
+            StartCoroutine(Wait());
         }
-        //FIX: LATER TRANSITION TO THE BEGINNINING!
-        // if(secondsLeft < -5)
-        // {
-        //     SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
-        // }
+     
 
     }
     
@@ -60,4 +58,17 @@ public class RevealTimer : MonoBehaviour
                     Destroy(npcs[i]);
                 }
             }
+    IEnumerator Wait()
+    {
+       
+    yield return new WaitForSeconds(5);
+    secondsLeftTillCredits -= 1;
+
+    if(secondsLeftTillCredits < 0)
+    {
+        SceneManager.LoadScene("Credits");
+    }
+        
+       
+    }
 }

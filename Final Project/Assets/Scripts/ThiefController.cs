@@ -13,13 +13,12 @@ public class ThiefController : MonoBehaviour
     int moving=0;
     Rigidbody rb;
     Transform t;
-    Animator animator;
+
     // Start is called before the first frame update
     void Start()
     {
         rb = this.GetComponent<Rigidbody>();
         t = this.GetComponent<Transform>();
-        animator = this.GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -29,7 +28,6 @@ public class ThiefController : MonoBehaviour
         if (Input.GetKey(KeyCode.UpArrow))//  && (rb.velocity.magnitude < maxFwdSpeed))
             {
             rb.velocity = this.transform.forward * 80f * Time.deltaTime;
-            animator.enabled=true;
             }
            /* 
         else if (Input.GetKey(KeyCode.DownArrow) )// && (rb.velocity.magnitude < maxBckSpeed))
@@ -37,10 +35,6 @@ public class ThiefController : MonoBehaviour
             rb.velocity -= this.transform.forward * speed * Time.deltaTime;
             }
             */
-        else 
-        {
-            animator.enabled=false;
-        }    
 
         if (Input.GetKey(KeyCode.RightArrow))
             t.rotation *= Quaternion.Euler(0, rotationSpeed * Time.deltaTime, 0);

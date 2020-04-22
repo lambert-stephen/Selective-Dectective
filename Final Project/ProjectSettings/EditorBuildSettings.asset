@@ -9,6 +9,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu.unity
     guid: 501c404c8c9b54bc0b44f32fe3d0e885
   - enabled: 1
+    path: Assets/Scenes/Story.unity
+    guid: 37a58784e970bcc48b83913bd5f0ce00
+  - enabled: 1
+    path: Assets/Scenes/Tutorial.unity
+    guid: 366dfe069a829d14988ed4a87b6c13bb
+  - enabled: 1
     path: Assets/Scenes/CharSelect.unity
     guid: a09c4a42f4467db4faa87f9d57c2c7fc
   - enabled: 1
@@ -17,4 +23,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Reveal.unity
     guid: d025d2856c03e1e4f88746ac496f998b
+  - enabled: 1
+    path: Assets/Scenes/Credits.unity
+    guid: 5678832f904464340b8a1f330665dda9
   m_configObjects: {}
