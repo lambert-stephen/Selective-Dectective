@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class ThiefController : MonoBehaviour
 {
-    public float speed = 35f;
+    public float speed = 25f;
     public float rotationSpeed = 90;
 
     int selector = 0;
@@ -28,7 +28,7 @@ public class ThiefController : MonoBehaviour
 
         if (Input.GetKey(KeyCode.UpArrow))//  && (rb.velocity.magnitude < maxFwdSpeed))
             {
-            rb.velocity = this.transform.forward * 80f * Time.deltaTime;
+            rb.velocity = this.transform.forward * 160f * Time.deltaTime;
             }
            /* 
         else if (Input.GetKey(KeyCode.DownArrow) )// && (rb.velocity.magnitude < maxBckSpeed))
