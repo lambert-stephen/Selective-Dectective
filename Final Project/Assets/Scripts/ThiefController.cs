@@ -53,6 +53,7 @@ public class ThiefController : MonoBehaviour
     {
         if(theCollision.gameObject.tag == "Steal_This")
         {
+            CounterScript.scoreValue += 1;
             FindObjectOfType<AudioManager>().Play("Stolen");
             selector += 1;
             DestroyObject(theCollision.gameObject);
