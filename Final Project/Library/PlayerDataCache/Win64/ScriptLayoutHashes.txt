@@ -1,11 +1,14 @@
 Win64
 PlayerPath?
-C:/Users/Justin/Documents/GitHub/cs426_Selective_Detective_Final_Project/_Windows Build Output/Final Project.exe
+C:/Users/Justin/Documents/GitHub/cs426_Selective_Detective_Final_Project/_Windows Build Output (Click Me) 80/Final Project.exe
 SceneListBegin?
 Assets/Scenes/Menu.unity
+Assets/Scenes/Story.unity
+Assets/Scenes/Tutorial.unity
 Assets/Scenes/CharSelect.unity
 Assets/Scenes/Game.unity
 Assets/Scenes/Reveal.unity
+Assets/Scenes/Credits.unity
 SceneListEnd?
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.getReal3DHeadUpdater
 3261fe8d388257ddfd1f3334ee989c44 Assembly-CSharp.dll:.CAVE2InputManager
@@ -111,6 +114,7 @@ abf1930d8126d0b2e00e9449129a0190 UnityEngine.UI.dll:UnityEngine.EventSystems.Tou
 e8940aa078577ea1ead32b518508b598 Assembly-CSharp.dll:.VRPlayerWrapper
 1a8001dc7dd3c89752fc82326f1aca25 Assembly-CSharp.dll:.NavModeUI
 a4f77a0c2d46c391c539e37a2977c0ac Assembly-CSharp.dll:.CAVE2SkyboxController
+71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.TutorialMenu
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.RandomSeedDisplay
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.MachineInfoUI
 2cd53c90ae4b298f317e8f86a2809048 Assembly-CSharp.dll:.CharacterCustomization
@@ -148,6 +152,7 @@ ad9173d3a69d99153f38ed4b62226129 UnityEngine.Networking.dll:UnityEngine.Networki
 d14e02938031615ab0a8a1c700faa887 Assembly-CSharp.dll:.CAVE2PlayerCollider
 28c8894559511fa3761cf5f99379663f Assembly-CSharp.dll:.CAVE2PlayerControllerID
 6a49c6c93607b942c7b0c1e4d9826fd8 Assembly-CSharp.dll:.OmicronSpeechManager
+71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.CounterScript
 6d228ef6ced936d723a4d66a930a557f Assembly-CSharp.dll:.CAVE2WandNavigator
 d251bf88db6c95a6b1aa0b69298da9ef UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
 1375feb21143244b1ea073ca7eb763e0 Assembly-CSharp.dll:.HoloLensCameraCalibrationUI
@@ -191,6 +196,7 @@ f84865a65a73707c4b0bb11dababb75c Assembly-CSharp.dll:.OmicronMocapSensor
 e63944317d2f5958e31963668bb29158 Assembly-CSharp.dll:TMPro.Examples.VertexJitter
 5b1bc12308cb2f0f67937d2fd14b821b Assembly-CSharp.dll:.OmicronManager
 71bb6a6b6c8f052f948db64c7dd3ca4f Unity.TextMeshPro.dll:TMPro.TMP_SpriteAnimator
+b3b88a83977f0095ee5fd9765e4de1e8 Assembly-CSharp.dll:.AnimationScript
 18f5e8ee245e71b491b2c80da42080d2 Assembly-CSharp.dll:.DestroyOnTimer
 e14cb840868f01674208fd9388b7a797 Assembly-CSharp.dll:.VRDisplayManager
 1dc3ceecff8f21e81d40907cc6de3b63 Assembly-CSharp.dll:.CAVE2VRLobbyManager
@@ -198,7 +204,7 @@ f6541e4e4e52a6eec6042bf69b7d9fe3 Assembly-CSharp.dll:.TransformInfo
 4fd8bf02e3089425d3502e26c44ba31a Unity.TextMeshPro.dll:TMPro.TextContainer
 bc7fe2d5d9fb7d88582071aabb2db6f8 Assembly-CSharp.dll:.CAVE2InteractableChild
 3cae62e09a50c5d5aae8d0536b3d8fde Assembly-CSharp.dll:.ChatController
-f321a951f16f0fb6513956394351b915 Assembly-CSharp.dll:.RevealTimer
+046b16bf43339f090cfff12d9a4875d0 Assembly-CSharp.dll:.RevealTimer
 b00c637e1bce8f3d2dd8f525763ed1fb Assembly-CSharp.dll:.PrecisionTransformModifier
 f321a951f16f0fb6513956394351b915 Assembly-CSharp.dll:.TimerCountDown
 c999b889721d2dbfcdfb0ee50d17f64f Assembly-CSharp.dll:.OmicronKinectImageClient

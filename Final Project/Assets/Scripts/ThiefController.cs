@@ -28,7 +28,7 @@ public class ThiefController : MonoBehaviour
 
         if (Input.GetKey(KeyCode.UpArrow))//  && (rb.velocity.magnitude < maxFwdSpeed))
             {
-            rb.velocity = this.transform.forward * 160f * Time.deltaTime;
+            rb.velocity = this.transform.forward * 80f * Time.deltaTime;
             }
            /* 
         else if (Input.GetKey(KeyCode.DownArrow) )// && (rb.velocity.magnitude < maxBckSpeed))

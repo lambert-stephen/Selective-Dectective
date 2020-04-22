@@ -1,6 +1,6 @@
 OSXUniversal
 PlayerPath?
-C:/Users/Justin/Documents/GitHub/cs426_Selective_Detective_Final_Project/_Mac Build Output.app
+C:/Users/Justin/Documents/GitHub/cs426_Selective_Detective_Final_Project/_Mac Build Output (Click Me) 80.app
 SceneListBegin?
 Assets/Scenes/Menu.unity
 Assets/Scenes/Story.unity
