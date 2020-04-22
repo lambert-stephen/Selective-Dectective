@@ -1,7 +1,7 @@
 sceneSetups:
 - path: Assets/Scenes/Game.unity
   isLoaded: 1
-  isActive: 1
+  isActive: 0
 - path: Assets/Scenes/CharSelect.unity
   isLoaded: 0
   isActive: 0
@@ -9,8 +9,8 @@ sceneSetups:
   isLoaded: 0
   isActive: 0
 - path: Assets/Scenes/Menu.unity
-  isLoaded: 0
-  isActive: 0
+  isLoaded: 1
+  isActive: 1
 - path: Assets/Scenes/Reveal.unity
   isLoaded: 0
   isActive: 0

@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class ThiefController : MonoBehaviour
 {
-    public float speed = 1f;
+    public float speed = 35f;
     public float rotationSpeed = 90;
 
     int selector = 0;
@@ -17,6 +17,7 @@ public class ThiefController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        
         rb = this.GetComponent<Rigidbody>();
         t = this.GetComponent<Transform>();
     }
