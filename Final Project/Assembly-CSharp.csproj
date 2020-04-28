@@ -57,6 +57,7 @@
      <Compile Include="Assets\AurynSky\Gems Ultimate Pack\Scripts\AnimationScript.cs" />
      <Compile Include="Assets\CivilCharactersPack\Scripts\CharacterCustomization.cs" />
      <Compile Include="Assets\CivilCharactersPack\Scripts\UIControllerDEMO.cs" />
+     <Compile Include="Assets\CreditMenu.cs" />
      <Compile Include="Assets\DontDestroy.cs" />
      <Compile Include="Assets\ignoreCollison.cs" />
      <Compile Include="Assets\MainMenu.cs" />
