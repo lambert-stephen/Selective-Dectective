@@ -28,7 +28,7 @@ public class Pathfinding : MonoBehaviour
         if(dist2 <1 && dist2>=0 )
         {
           Random.seed = System.DateTime.Now.Millisecond;
-          destPoint=Random.Range(0,17);
+          destPoint=Random.Range(0,11);
   	      nav.destination = points[destPoint].position;
         }
         countSeconds = 0;
@@ -42,7 +42,7 @@ public class Pathfinding : MonoBehaviour
   		return;
   	}
     Random.seed = System.DateTime.Now.Millisecond;
-    destPoint=Random.Range(0,17);
+    destPoint=Random.Range(0,11);
   	nav.destination = points[destPoint].position;
   }
 

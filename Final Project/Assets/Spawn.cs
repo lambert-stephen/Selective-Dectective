@@ -24,10 +24,10 @@ public class Spawn : MonoBehaviour
         buttons[2].onClick.AddListener(char3);
         buttons[3].onClick.AddListener(char4);
         Random.seed = System.DateTime.Now.Millisecond;
-        index[0]=Random.Range(0,19);
+        index[0]=Random.Range(0,25);
         while (true)
         {
-            r=Random.Range(0,19);
+            r=Random.Range(0,25);
             if(r!=index[0])
             {
                 index[1]=r;
@@ -36,7 +36,7 @@ public class Spawn : MonoBehaviour
         }
         while (true)
         {
-            r=Random.Range(0,19);
+            r=Random.Range(0,25);
             if(r!=index[0] && r!=index[1])
             {
                 index[2]=r;
@@ -45,7 +45,7 @@ public class Spawn : MonoBehaviour
         }
         while (true)
         {
-            r=Random.Range(0,19);
+            r=Random.Range(0,25);
             if(r!=index[0] && r!=index[1] && r!=index[2])
             {
                 index[3]=r;

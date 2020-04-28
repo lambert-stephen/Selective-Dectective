@@ -4227,7 +4227,7 @@ MeshCollider:
   m_GameObject: {fileID: 3750431202108128901}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
@@ -4244,7 +4244,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78b6634976b15db4d9cf9bad929dc8b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
+  speed: 25
   rotationSpeed: 90
 --- !u!65 &65328914198835854
 BoxCollider:
@@ -4255,7 +4255,7 @@ BoxCollider:
   m_GameObject: {fileID: 3750431202108128901}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.5, y: 2, z: 0.5}
   m_Center: {x: 0, y: 1, z: 0}

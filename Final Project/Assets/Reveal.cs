@@ -21,7 +21,7 @@ public class Reveal : MonoBehaviour
 
         while (true)
         {
-            r=Random.Range(0,19);
+            r=Random.Range(0,25);
             if(r!=playerindex)
             {
                 index[0]=r;
@@ -31,7 +31,7 @@ public class Reveal : MonoBehaviour
         
         while (true)
         {
-            r=Random.Range(0,19);
+            r=Random.Range(0,25);
             if(r!=index[0] && r!=playerindex)
             {
                 index[1]=r;
@@ -40,7 +40,7 @@ public class Reveal : MonoBehaviour
         }
         while (true)
         {
-            r=Random.Range(0,19);
+            r=Random.Range(0,25);
             if(r!=index[0] && r!=index[1] && r!=playerindex)
             {
                 index[2]=r;
@@ -49,7 +49,7 @@ public class Reveal : MonoBehaviour
         }
         while (true)
         {
-            r=Random.Range(0,19);
+            r=Random.Range(0,25);
             if(r!=index[0] && r!=index[1] && r!=index[2] && r!=playerindex)
             {
                 index[3]=r;

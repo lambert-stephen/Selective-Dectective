@@ -12022,6 +12022,7 @@ GameObject:
   - component: {fileID: 64411088307101448}
   - component: {fileID: 114489031449190706}
   - component: {fileID: 65515742983632318}
+  - component: {fileID: 95205004327504498}
   m_Layer: 0
   m_Name: male_suite9_LOD
   m_TagString: Untagged
@@ -12160,6 +12161,25 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.5, y: 2, z: 0.5}
   m_Center: {x: 0, y: 1, z: 0}
+--- !u!95 &95205004327504498
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7288821973517020808}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: 4006a92d0eb6fee4db124db38541b7fa, type: 3}
+  m_Controller: {fileID: 9100000, guid: 6e59c0334340bcb4b9a3ef250189eab2, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &8534850761796116097
 GameObject:
   m_ObjectHideFlags: 0
